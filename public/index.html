@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compra de prueba · Mercado Pago</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Compra de prueba</h1>
+    <p class="notice">Actividad recuperativa · Entorno de pruebas de Mercado Pago. Utiliza únicamente cuentas y tarjetas de prueba.</p>
+    <section id="product-section" aria-labelledby="product-name">
+      <h2 id="product-name">Cargando producto…</h2>
+      <p id="product-description"></p>
+      <p id="product-price" class="price"></p>
+      <button id="buy" type="button" disabled>Comprar en modo prueba</button>
+      <p id="buy-message" role="status" aria-live="polite"></p>
+      <button id="reload" type="button" hidden>Volver a cargar</button>
+    </section>
+    <section id="result-section" aria-labelledby="result-title" hidden>
+      <h2 id="result-title">Verificando resultado…</h2>
+      <p id="result-message" role="status" aria-live="polite"></p>
+      <dl id="result-details"></dl>
+      <button id="retry" type="button" hidden>Consultar nuevamente</button>
+      <p><a href="/">Volver al producto</a></p>
+    </section>
+    <noscript>Activa JavaScript para cargar el producto e iniciar la compra de prueba.</noscript>
+  </main>
+</body>
+</html>
